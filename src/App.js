@@ -1,4 +1,4 @@
-import { AppMenu } from "./layout";
+import { AppMenu, Footer } from "./layout";
 import { Main } from "./pages";
 
 
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <AppMenu />
       <Main />
+      <Footer />
     </div>
   );
 }

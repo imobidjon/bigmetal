@@ -5,7 +5,7 @@ import AboutImage from "../../../../assets/AboutUs.png";
 
 export default function About() {
   return (
-    <Box sx={{ py: 7 }}>
+    <Box sx={{ py: 7, mb:10 }}>
       <div className="container">
         <Typography
           fontWeight={"400"}
