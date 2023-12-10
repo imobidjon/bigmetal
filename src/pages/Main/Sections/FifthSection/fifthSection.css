@@ -1,0 +1,36 @@
+.bgImage {
+  background: url(../../../../assets/bg.png) no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  height: 401px;
+}
+.bgImageText {
+  color: #fff !important;
+  text-align: center !important;
+  font-family: Libre Franklin !important;
+  font-size: 54px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  /* margin: 100px 0 !important; */
+  padding: 60px 0 50px 0 !important;
+}
+
+.GoldHeader {
+  color: #323750 !important;
+  font-family:  Libre Franklin !important;
+  font-size: 64px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.GoldParagraph {
+  color: #323750 !important;
+  text-align: center !important;
+  font-family:  Libre Franklin !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}

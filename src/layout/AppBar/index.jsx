@@ -14,7 +14,7 @@ export default function AppMenu() {
       <div className="container">
         <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid p-0">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img
                 src={Logo}
                 style={{
@@ -48,28 +48,28 @@ export default function AppMenu() {
                   <a
                     className="nav-link active text-white"
                     aria-current="page"
-                    href="#"
+                    href="/"
                   >
                     Katalog
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">
+                  <a className="nav-link text-white" href="/">
                     Kompaniya haqida
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">
+                  <a className="nav-link text-white" href="/">
                     Bloglar
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">
+                  <a className="nav-link text-white" href="/">
                     Kalkulyator
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">
+                  <a className="nav-link text-white" href="/">
                     Kontaktlar
                   </a>
                 </li>
