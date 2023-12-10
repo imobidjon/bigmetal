@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Fifth, FirstSection, Katalog, TopMahsulotlar } from './Sections'
+import { About, Companies, Contact, Fifth, FirstSection, Katalog, TopMahsulotlar } from './Sections'
 
 export default function Main() {
   return (
@@ -9,6 +9,8 @@ export default function Main() {
         <Katalog />
         <About />
         <Fifth />
+        <Companies />
+        <Contact />
     </div>
   )
 }

@@ -15,12 +15,13 @@ export default function FifthSection() {
             display: "flex",
             justifyContent: "center",
             position: "relative",
+            marginBottom: 10,
           }}
         >
           <Box
             sx={{
               position: "absolute",
-              top: '40px',
+              top: "40px",
               width: "240px",
               height: "240px",
               borderRadius: "50%",
@@ -37,14 +38,16 @@ export default function FifthSection() {
                 height: "220px",
                 borderRadius: "50%",
                 border: "4px solid #fff",
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent:'center',
-                flexDirection: 'column'
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
               }}
             >
-                <Typography className="GoldHeader"> 10</Typography>
-                <Typography className="GoldParagraph">tonnagacha bepul yetkazib berish</Typography>
+              <Typography className="GoldHeader"> 10</Typography>
+              <Typography className="GoldParagraph">
+                tonnagacha bepul yetkazib berish
+              </Typography>
             </Box>
           </Box>
           <Box
@@ -52,14 +55,15 @@ export default function FifthSection() {
               border: "6px solid #FEC601",
               position: "absolute",
               zIndex: -1,
-              top: '-50px',
+              top: "-50px",
               width: "400px",
               height: "400px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               borderRadius: "50%",
-            }}></Box>
+            }}
+          ></Box>
         </Box>
       </div>
     </div>
