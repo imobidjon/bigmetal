@@ -13,7 +13,7 @@ export default function AppMenu() {
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg ">
-          <div className="container-fluid text-white">
+          <div className="container-fluid p-0">
             <a className="navbar-brand" href="#">
               <img
                 src={Logo}

@@ -1,0 +1,24 @@
+thead th {
+  background-color: #0b244c !important;
+  color: white !important;
+  padding: 16px 45px !important;
+}
+
+table > tbody{
+    font-family: Libre Franklin;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+table > tbody > tr {
+    border-left: none !important;
+    border-right: none !important;
+  border: 10px solid #F4F7F8;
+  padding: 16px 45px !important;
+}
+
+table > tbody > tr > td {
+  padding: 16px 45px !important;
+}

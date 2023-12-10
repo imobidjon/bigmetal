@@ -1,7 +1,12 @@
 import React from 'react'
+import { FirstSection, Katalog, TopMahsulotlar } from './Sections'
 
 export default function Main() {
   return (
-    <div>Main</div>
+    <div>
+        <FirstSection />
+        <TopMahsulotlar />
+        <Katalog />
+    </div>
   )
 }

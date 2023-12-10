@@ -1,0 +1,23 @@
+.CustomCard {
+  background: #f4f7f8;
+  border-radius: 0 12px 12px 0;
+  border-left: 2px solid #1950dd;
+  width: 85%;
+  height: 172px;
+}
+.CustomCardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.CustomText {
+  color: #000;
+  font-family: Libre Franklin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
