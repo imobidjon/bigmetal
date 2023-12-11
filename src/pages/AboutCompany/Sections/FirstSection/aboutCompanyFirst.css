@@ -27,18 +27,12 @@
 
 .AboutFirstWrapper {
   display: flex;
-  justify-content: space-evenly !important;
+  justify-content: space-evenly;
   align-items: center;
   position: absolute;
   bottom: -70px;
   right: 0;
   left: 0;
-}
-
-.AboutFirstWrapperPosition {
-  position: absolute;
-  bottom: -80px;
-  width: 100%;
 }
 
 .AboutFirstCard {

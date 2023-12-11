@@ -1,0 +1,111 @@
+.ThirdWrapper {
+  margin-top: 13rem;
+}
+
+.line {
+  background: #323750;
+  width: 100%;
+  height: 4px;
+  position: relative;
+}
+
+.dotsWrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: -18px;
+}
+
+.dots {
+  width: 40px;
+  height: 40px;
+  background: #323750;
+  border-radius: 50%;
+}
+
+.ThirdCard {
+  border-radius: 24px;
+  background-color: #fff;
+  width: 280px;
+  height: 360px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: -100px;
+  padding: 15px;
+  box-shadow: 0px 1px 20px 0px rgba(25, 80, 221, 0.25);
+}
+
+.ThirdCardHeader {
+  position: absolute;
+  top: -18px;
+}
+
+.ThirdCardText {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ThirdCardBody {
+  border: 4px solid #1950dd;
+  border-radius: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.ThirdCardTitle {
+  color: #000 !important;
+  font-family: Libre Franklin !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin-bottom: 20px !important;
+}
+
+.ThirdCardParagraph {
+  color: #000 !important;
+  font-family: Libre Franklin !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 25.5px !important; /* 182.143% */
+}
+
+.ThirdCardFooter {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid #1950dd;
+  background: #fff;
+  position: absolute;
+  bottom: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ThirdCardFooterCenterRed {
+  width: 9px;
+  height: 9px;
+  background-color: #ff3131;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
