@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutCompanyFirst, AboutCompanySecond, AboutCompanyThird } from './Sections'
+import { AboutCompanyFirst, AboutCompanyFourth, AboutCompanySecond, AboutCompanyThird } from './Sections'
 
 export default function AboutCompany() {
   return (
@@ -7,6 +7,7 @@ export default function AboutCompany() {
         <AboutCompanyFirst />
         <AboutCompanySecond />
         <AboutCompanyThird />
+        <AboutCompanyFourth />
     </div>
   )
 }
