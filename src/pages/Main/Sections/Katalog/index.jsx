@@ -11,7 +11,10 @@ export default function KatalogSection() {
       <div className="container">
         <Typography
           fontWeight={"400"}
-          fontSize={"32px"}
+          sx={{
+            fontSize: { xs: "22px", md: "32px" },
+            textAlign: { xs: "center", md: 'start' },
+          }}
           lineHeight={"normal"}
           color={"#222222"}
           marginBottom={"1.5rem"}
@@ -21,6 +24,7 @@ export default function KatalogSection() {
 
         <Grid
           container
+          columnSpacing={{ xs: 0}}
           spacing={{ xs: 2, md: 5 }}
           columns={{ xs: 4, sm: 9, md: 10 }}
         >

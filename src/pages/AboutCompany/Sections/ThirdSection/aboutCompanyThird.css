@@ -109,3 +109,9 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
+@media (width <= 600px) {
+  .ThirdCard {
+    width: 100%;
+  }
+}

@@ -4,21 +4,22 @@ thead th {
   padding: 16px 45px !important;
 }
 
-table > tbody{
-    font-family: Libre Franklin;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+table > tbody {
+  font-family: Libre Franklin;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 table > tbody > tr {
-    border-left: none !important;
-    border-right: none !important;
-  border: 10px solid #F4F7F8;
+  border-left: none !important;
+  border-right: none !important;
+  border: 10px solid #f4f7f8 !important;
   padding: 16px 45px !important;
 }
 
 table > tbody > tr > td {
+  background-color: #fff !important;
   padding: 16px 45px !important;
 }

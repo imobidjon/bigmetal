@@ -15,11 +15,11 @@ table > tbody {
 table > tbody > tr {
   border-left: none !important;
   border-right: none !important;
-  border: 10px solid #ffffff;
+  border: 10px solid #ffffff ;
   padding: 16px 45px !important;
 }
 
 table > tbody > tr > td {
-    background-color: #F4F7F8 !important ;
+  background-color: #F4F7F8 ;
   padding: 16px 45px !important;
 }

@@ -7,16 +7,17 @@ export default function Contact() {
   return (
     <Box
       sx={{
+        border: {xs: 'none', md: 'block'},
         borderTop: "2px solid #F2F2F2",
         borderBottom: "2px solid #F2F2F2",
-        my: 10,
-        py: 7,
+        my: {xs: 2, md: 10},
+        py: {xs: 2, md: 7},
       }}
     >
       <div className="container">
-        <Grid container columnSpacing={15}>
+        <Grid container columnSpacing={{xs: 0,md:15}} rowSpacing={{xs: 10, md: 0}}>
           <Grid item xs={12} sm={12} md={6}>
-            <Typography className="ContactTitle">Kontakt</Typography>
+            <Typography className="ContactTitle" sx={{fontSize: {xs: '24px', md: '32px'}}}>Kontakt</Typography>
             <Typography className="ContactParagraph">
               Bizga istalgan vaqtda xabar qoldiring. Operatorlarimiz siz bilan
               tez orada bog‘lanishadi
@@ -108,15 +109,15 @@ export default function Contact() {
                     d="M8 11.25C9.65685 11.25 11 9.90685 11 8.25C11 6.59315 9.65685 5.25 8 5.25C6.34315 5.25 5 6.59315 5 8.25C5 9.90685 6.34315 11.25 8 11.25Z"
                     stroke="white"
                     stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M14.0002 11.25C11.7502 16.5 8.00018 22.5 8.00018 22.5C8.00018 22.5 4.25018 16.5 2.00018 11.25C-0.249817 6 3.50018 1.5 8.00018 1.5C12.5002 1.5 16.2502 6 14.0002 11.25Z"
                     stroke="white"
                     stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 Yunusobod tumani, 19-daha, 15-uy
@@ -133,8 +134,8 @@ export default function Contact() {
                   <path
                     d="M12 6V12L15 15M21.75 12C21.75 17.385 17.385 21.75 12 21.75C6.615 21.75 2.25 17.385 2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12Z"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 9:00 - 18:00

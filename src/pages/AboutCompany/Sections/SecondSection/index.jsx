@@ -5,13 +5,16 @@ import AboutImage from "../../../../assets/AboutCompanySecondSectionImage.png";
 
 export default function About() {
   return (
-    <Box sx={{ py: 7, mb: 10, mt: 10 }}>
+    <Box sx={{ py: 7, mb: 10, mt: {xs: 14, md: 10} }}>
       <div className="container">
         <Grid container>
           <Grid item sx={12} sm={12} md={6}>
             <Typography
               fontWeight={"400"}
-              fontSize={"32px"}
+              sx={{
+                fontSize: { xs: "22px", md: "32px" },
+                textAlign: { xs: "center", md: 'start' },
+              }}
               lineHeight={"normal"}
               color={"#222222"}
               marginBottom={"1.5rem"}

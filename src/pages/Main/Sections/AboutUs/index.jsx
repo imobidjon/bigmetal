@@ -9,7 +9,10 @@ export default function About() {
       <div className="container">
         <Typography
           fontWeight={"400"}
-          fontSize={"32px"}
+          sx={{
+            fontSize: {xs: '22px', md: '32px'},
+            textAlign: {xs: 'center', md: 'start'}
+          }}
           lineHeight={"normal"}
           color={"#222222"}
           marginBottom={"1.5rem"}
@@ -24,7 +27,7 @@ export default function About() {
                 py: 3,
                 display: "flex",
                 flexDirection: "column",
-                gap: '100px'
+                gap: {xs: '50px', md: '100px'}
               }}
             >
               <Box>

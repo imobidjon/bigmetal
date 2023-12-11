@@ -8,17 +8,17 @@ export default function index() {
   return (
     <div className="ThirdWrapper">
       <div className="LineWrapper">
-        <div className="line">
+        <Box sx={{display: {xs: 'none', md: 'block'}}} className="line">
           <div className="dotsWrapper">
             <div className="dots"></div>
             <div className="dots"></div>
             <div className="dots"></div>
             <div className="dots"></div>
           </div>
-        </div>
+        </Box>
       </div>
       <div className="container">
-        <Grid container columnSpacing={30}>
+        <Grid container columnSpacing={{xs: 0, md: 30}} rowSpacing={{xs: 15, md: 0}}>
           <Grid item xs={12} sm={6} md={4}>
             <Box className={"ThirdCard"}>
               <Box className={"ThirdCardHeader"}>

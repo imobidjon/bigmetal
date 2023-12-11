@@ -8,8 +8,8 @@
   color: #fff !important;
   text-align: center !important;
   font-family: Libre Franklin !important;
-  font-size: 54px !important;
   font-style: normal !important;
+  font-size: 54px !important;
   font-weight: 600 !important;
   line-height: normal !important;
   /* margin: 100px 0 !important; */
@@ -18,19 +18,33 @@
 
 .GoldHeader {
   color: #323750 !important;
-  font-family:  Libre Franklin !important;
-  font-size: 64px !important;
+  font-family: Libre Franklin !important;
   font-style: normal !important;
   font-weight: 500 !important;
+  font-size: 64px !important;
   line-height: normal !important;
 }
 
 .GoldParagraph {
   color: #323750 !important;
   text-align: center !important;
-  font-family:  Libre Franklin !important;
-  font-size: 18px !important;
+  font-family: Libre Franklin !important;
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: normal !important;
+  font-size: 18px !important;
+}
+@media (width <= 600px) {
+  .bgImage {
+    height: 215px;
+  }
+  .bgImageText {
+    font-size: 24px !important;
+  }
+  .GoldHeader {
+    font-size: 28.48px !important;
+  }
+  .GoldParagraph {
+    font-size: 8px !important;
+  }
 }

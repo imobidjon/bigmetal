@@ -13,12 +13,15 @@ export default function index() {
               <br /> tashrif buyurganingizdan
               <br /> mamnunmiz!
             </Typography>
-            <Typography className="AboutParagraphText">
+            <Typography sx={{display: {xs: 'none', md: 'block'}}} className="AboutParagraphText">
               Biz bilan hamkorlik qilsangiz, siz uchun narxlar yanada
               qulaylashib boradi. Bizning maqsadimiz mijozlar ishonchini
               qozonish va ularga sifatli mahsulot yetkazib berish. Mahsulotlar
               va biz haqimizdagi ma’lumotlar quyida kengroq berilgan. Biz siz
               bilan ishlashdan mamnunmiz !
+            </Typography>
+            <Typography sx={{display: {xs: 'block', md: 'none'}}} className="AboutParagraphText">
+            Bizning maqsadimiz mijozlar ishonchini qozonish va ularga sifatli mahsulot yetkazib berish. 
             </Typography>
           </Grid>
         </Grid>
@@ -36,11 +39,13 @@ export default function index() {
               Kunlik mahsulot aylanmasi
             </Typography>
           </div>
-          <div className="AboutFirstCard">
-            <Typography className="AboutFirstCardText">3000 t</Typography>
-            <Typography className="AboutFirstCardParagraph">
-              Hozirda sotuvda mavjud
-            </Typography>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div className="AboutFirstCard item3" style={{}}>
+              <Typography className="AboutFirstCardText">3000 t</Typography>
+              <Typography className="AboutFirstCardParagraph">
+                Hozirda sotuvda mavjud
+              </Typography>
+            </div>
           </div>
         </div>
         {/* <Grid container justifyContent="space-evenly" display={"flex"}>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Box,
   Divider,
-  FormControl,
   Grid,
   InputLabel,
   MenuItem,
@@ -36,6 +35,7 @@ export default function Calculator() {
         <div className="container">
           <Grid
             container
+            columnSpacing={{ xs: 0 }}
             spacing={{ xs: 2, md: 5 }}
             columns={{ xs: 4, sm: 9, md: 10 }}
           >
@@ -59,16 +59,23 @@ export default function Calculator() {
         </div>
       </Box>
 
-      <Box sx={{ my: 4, display: "flex", alignItems: "center" }}>
+      <Box
+        sx={{
+          my: 4,
+          display: { xs: "block", md: "flex" },
+          alignItems: "center",
+        }}
+      >
         <div className="container">
-          <FormControl>
-            <label>O'lchov</label>
+          <Box>
+            <InputLabel>O'lchov</InputLabel>
             <Select
+              fullWidth
               sx={{
                 borderRadius: "8px",
                 height: "43px",
                 p: "8px",
-                width: "250px",
+                width: { xs: "100%", md: "250px" },
                 "&:hover": {
                   border: "none",
                 },
@@ -83,15 +90,15 @@ export default function Calculator() {
               <MenuItem value={1}>O'lchov bo'yicha</MenuItem>
               <MenuItem value={2}>Turi bo'yicha</MenuItem>
             </Select>
-          </FormControl>
-          <FormControl>
-            <label>Nisbat</label>
+          </Box>
 
+          <Box sx={{mt: {xs: 2}}}>
+            <InputLabel>Nisbat</InputLabel>
             <Select
               sx={{
                 borderRadius: "8px",
                 height: "43px",
-                width: "250px",
+                width: { xs: "100%", md: "250px" },
                 p: "8px",
                 background: "",
                 "&:hover": {
@@ -107,18 +114,18 @@ export default function Calculator() {
               <MenuItem value={1}>Yangi</MenuItem>
               <MenuItem value={2}>Eski</MenuItem>
             </Select>
-          </FormControl>
+          </Box>
         </div>
       </Box>
       <Divider sx={{ borderWidth: "2px" }} />
       <div className="container">
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "space-between",
+            display: { xs: "block", md: "flex" },
+            justifyContent: { md: "space-between" },
             alignItems: "center",
             mt: 5,
-            mb: 8,
+            mb: { xs: 0, md: 8 },
           }}
         >
           <Box>
@@ -126,30 +133,33 @@ export default function Calculator() {
             <TextField
               defaultValue={"0"}
               sx={{
+                width: { xs: "100%" },
                 ".MuiInputBase-root": {
                   height: "43px",
                   border: "0.5px solid #222",
                   borderRadius: "8px",
                 },
-                '& fieldset': {
-                    border: 'none'
-                }
+                "& fieldset": {
+                  border: "none",
+                },
               }}
             />
           </Box>
-          <Box>
+          <Box sx={{ my: { xs: 2 } }}>
             <InputLabel>Uzunligi, m</InputLabel>
             <TextField
               defaultValue={"0"}
               sx={{
+                width: { xs: "100%" },
+
                 ".MuiInputBase-root": {
                   height: "43px",
                   border: "0.5px solid #222",
                   borderRadius: "8px",
                 },
-                '& fieldset': {
-                    border: 'none'
-                }
+                "& fieldset": {
+                  border: "none",
+                },
               }}
             />
           </Box>
@@ -158,16 +168,18 @@ export default function Calculator() {
             <TextField
               defaultValue={"0"}
               sx={{
+                width: { xs: "100%" },
+
                 ".MuiInputBase-root": {
-                    background: '#1950DD',
+                  background: "#1950DD",
                   height: "43px",
                   border: "none",
                   borderRadius: "8px",
-                  color: '#fff'
+                  color: "#fff",
                 },
-                '& fieldset': {
-                    border: 'none'
-                }
+                "& fieldset": {
+                  border: "none",
+                },
               }}
             />
           </Box>

@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import PinDropIcon from "@mui/icons-material/PinDrop";
-import SendIcon from '@mui/icons-material/Send';
+import SendIcon from "@mui/icons-material/Send";
 
 export default function Contact() {
   return (
@@ -21,7 +21,7 @@ export default function Contact() {
         marginTop: "50px",
       }}
     >
-      <Grid container sx={{ px: 15, py: 10 }}>
+      <Grid container sx={{ px: 15, py: 10, display: {xs: 'none', md: 'flex'} }}>
         <Grid item md={5}>
           <Box>
             <Typography
@@ -159,7 +159,7 @@ export default function Contact() {
               }}
             ></Box>
             <Grid container columnSpacing={2} rowSpacing={3} paddingX={2}>
-              <Grid item md={6} sx={{pt:0}}>
+              <Grid item md={6} sx={{ pt: 0 }}>
                 <InputLabel sx={{ color: "#fff" }}>Ismingiz</InputLabel>
                 <TextField
                   sx={{

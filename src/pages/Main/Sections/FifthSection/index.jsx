@@ -21,9 +21,9 @@ export default function FifthSection() {
           <Box
             sx={{
               position: "absolute",
-              top: "40px",
-              width: "240px",
-              height: "240px",
+              top: {xs: '-35px', md: "40px"},
+              width: {xs: '106px', md: "240px"},
+              height: {xs: '106px', md: "240px"},
               borderRadius: "50%",
               background:
                 "linear-gradient(90deg, #FEC601 0%, #FFF4CD 30.93%, #FEC601 100%)",
@@ -34,8 +34,8 @@ export default function FifthSection() {
           >
             <Box
               sx={{
-                width: "220px",
-                height: "220px",
+                width: {xs: '97.9px', md: "220px"},
+                height: {xs: '97.9px', md: "220px"},
                 borderRadius: "50%",
                 border: "4px solid #fff",
                 display: "flex",
@@ -55,9 +55,9 @@ export default function FifthSection() {
               border: "6px solid #FEC601",
               position: "absolute",
               zIndex: -1,
-              top: "-50px",
-              width: "400px",
-              height: "400px",
+              top: {xs: '-70px', md: "-50px"},
+              width: {xs: '178px', md: "400px"},
+              height: {xs: '178px', md: "400px"},
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

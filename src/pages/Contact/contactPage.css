@@ -1,7 +1,6 @@
 .ContactTitle {
   color: #000 !important;
   font-family: Libre Franklin !important;
-  font-size: 32px !important;
   font-style: normal !important;
   font-weight: 500 !important;
   line-height: normal !important;
@@ -54,4 +53,28 @@
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: normal !important;
+}
+
+@media (width <= 600px) {
+  .ContactCard {
+    padding: 38px 75px 55px 38px;
+  }
+  .ContactSmallCard{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+  }
+  .ContactCardMail,
+.ContactCardPhone,
+.ContactCardLocation,
+.ContactCardTime {
+  font-size: 14px !important;
+}
+
+.ContactCardLocation {
+  font-size: 10px !important;
+
+}
 }

@@ -7,7 +7,6 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.15);
-  width: 350px;
 }
 
 .BlogCardImage img {
@@ -47,4 +46,16 @@
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: normal !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .BlogCard {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .BlogCard {
+    width: 350px !important;
+  }
 }

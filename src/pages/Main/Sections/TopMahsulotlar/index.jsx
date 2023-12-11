@@ -8,7 +8,10 @@ export default function TopMahsulotlar() {
       <div className="container">
         <Typography
           fontWeight={"400"}
-          fontSize={"32px"}
+          sx={{
+            fontSize: {xs: '22px', md: '32px'},
+            textAlign: {xs: 'center', md: 'start'}
+          }}
           lineHeight={"normal"}
           color={"#222222"}
           marginBottom={'1.5rem'}
@@ -28,7 +31,7 @@ export default function TopMahsulotlar() {
           <tbody>
             <tr>
               <td>Armatura</td>
-              <td>A500C/35Gs</td>
+              <td className="d-none d-lg-table-cell">A500C/35Gs</td>
               <td className="d-none d-lg-table-cell">12</td>
               <td>9 400 000 uzs</td>
             </tr>

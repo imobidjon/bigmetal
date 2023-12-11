@@ -20,125 +20,131 @@ export default function KatalogItem() {
   };
 
   return (
-    <div className="container">
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          my: 6,
-        }}
-      >
-        <FormControl>
-          <Select
-            sx={{
-              border: " 0.8px solid #000",
-              borderRadius: "8px",
-              height: "43px",
-              p: "8px",
-              "&:hover": {
-                border: "none",
-              },
-              "&:focus": {
-                border: "none",
-              },
-            }}
-            value={metal}
-            onChange={handleChange}
-          >
-            {KatalogArray.map((item) => (
-              <MenuItem key={item.id} value={item.id}>
-                {item.text}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-        <Typography>16.12.2023</Typography>
-        <FormControl>
-          <Select
-            sx={{
-              borderRadius: "8px",
-              color: '#fff',
-              height: "43px",
-              p: "8px",
-              background: '',
-              "&:hover": {
-                border: "none",
-              },
-              "&:focus": {
-                border: "none",
-              },
-              backgroundColor: '#1950DD'
-            }}
-            value={date}
-            onChange={handleChangeDate}
-          >
-            <MenuItem value={1}>Yangi</MenuItem>
-            <MenuItem value={2}>Eski</MenuItem>
-          </Select>
-        </FormControl>
-      </Box>
+    <>
+      <div className="container">
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            my: 6,
+          }}
+        >
+          <FormControl>
+            <Select
+              sx={{
+                border: " 0.8px solid #000",
+                borderRadius: "8px",
+                height: "43px",
+                p: "8px",
+                "&:hover": {
+                  border: "none",
+                },
+                "&:focus": {
+                  border: "none",
+                },
+              }}
+              value={metal}
+              onChange={handleChange}
+            >
+              {KatalogArray.map((item) => (
+                <MenuItem key={item.id} value={item.id}>
+                  {item.text}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+          <Typography sx={{display: {xs: 'none', md: 'block'}}}>16.12.2023</Typography>
+          <FormControl sx={{display: {xs: 'none', md: 'block'}}}>
+            <Select
+              sx={{
+                borderRadius: "8px",
+                color: "#fff",
+                height: "43px",
+                p: "8px",
+                background: "",
+                "&:hover": {
+                  border: "none",
+                },
+                "&:focus": {
+                  border: "none",
+                },
+                backgroundColor: "#1950DD",
+              }}
+              value={date}
+              onChange={handleChangeDate}
+            >
+              <MenuItem value={1}>Yangi</MenuItem>
+              <MenuItem value={2}>Eski</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+      </div>
 
-      <table className="table text-center">
-        <thead>
-          <tr>
-            <th>Nomi</th>
-            <th className="d-none d-lg-table-cell">Temir markasi</th>
-            <th className="d-none d-lg-table-cell">Uzunligi</th>
-            <th>Narxi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Armatura</td>
-            <td>A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-          <tr>
-            <td>Armatura</td>
-            <td className="d-none d-lg-table-cell">A500C/35Gs</td>
-            <td className="d-none d-lg-table-cell">12</td>
-            <td>9 400 000 uzs</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <Box sx={{ background: "#F4F7F8", py: 7 }}>
+        <div className="container">
+          <table className="table text-center">
+            <thead>
+              <tr>
+                <th>Nomi</th>
+                <th className="d-none d-lg-table-cell">Temir markasi</th>
+                <th className="d-none d-lg-table-cell">Uzunligi</th>
+                <th>Narxi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+              <tr>
+                <td>Armatura</td>
+                <td className="d-none d-lg-table-cell">A500C/35Gs</td>
+                <td className="d-none d-lg-table-cell">12</td>
+                <td>9 400 000 uzs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Box>
+    </>
   );
 }

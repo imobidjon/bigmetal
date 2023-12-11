@@ -6,10 +6,10 @@ import HuaweiLogo from "../../../../assets/HuaweiLogo.png";
 export default function Companies() {
   return (
     <div className="BgRectangleWrapper" style={{marginTop: '8rem'}} >
-      <div className="BgRectangle"></div>
+      <Box sx={{display: {xs: 'none', md: 'block'}}} className="BgRectangle"></Box >
       <div className="container">
         <Grid container>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={6} sx={{justifyContent: {xs: 'center', md: 'normal'}, display: {xs: 'flex'}}}>
             <Box className={"CompaniesCard"} sx={{ mt: 15 }}>
               <Typography className="CompaniesCardHeaderText">
                 Biz ishlagan tashkilotlar
@@ -27,10 +27,10 @@ export default function Companies() {
           <Grid item xs={12} sm={12} md={6}>
             <Grid
               container
-              sx={{ mt: 15 }}
+              sx={{ mt: {xs: 2, md: 15} }}
               rowSpacing={5}
               textAlign={"end"}
-              columns={{ md: 2 }}
+              columns={{ md: 2, xs: 2 }}
             >
               <Grid item xs={1}>
                 <img

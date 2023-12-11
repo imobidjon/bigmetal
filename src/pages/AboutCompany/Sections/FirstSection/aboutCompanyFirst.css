@@ -9,10 +9,10 @@
 .AboutHeaderText {
   color: #fff !important;
   font-family: Libre Franklin !important;
-  font-size: 48px !important;
   font-style: normal !important;
   font-weight: 500 !important;
-  line-height: 72px !important;
+  font-size: 48px !important;
+  line-height: 72px;
 }
 
 .AboutParagraphText {
@@ -62,4 +62,38 @@
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: normal !important;
+}
+
+@media (width <= 600px) {
+  .AboutBgImage {
+    padding: 2rem 0 5rem 0;
+  }
+  .AboutFirstWrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important ;
+    gap: 20px;
+    position: absolute;
+    bottom: -140px;
+    left: 50%;
+    right: 50%;
+  }
+  .AboutFirstCard {
+    width: 140px;
+    height: 80px;
+  }
+  .AboutHeaderText {
+    font-size: 18px !important;
+    line-height: normal !important;
+  }
+  .AboutParagraphText {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+
+  .AboutFirstCardText {
+    font-size: 20px !important;
+  }
+  .AboutFirstCardParagraph {
+    font-size: 10px !important;
+  }
 }
