@@ -95,7 +95,7 @@ export default function Footer() {
                   mt: 7,
                 }}
               >
-                <Box sx={{ textAlign: { xs: "center" }, mb: { xs: 3 } }}>
+                <Box sx={{ textAlign: { xs: "center", md: 'start'}, mb: { xs: 3 } }}>
                   <Typography
                     sx={{
                       fontFamily: "Libre Franklin",
