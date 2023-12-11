@@ -1,18 +1,11 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { KatalogCard } from "../../../../components";
-import Dvuxtavr from "../../../../assets/Dvuxtavr.png";
-import Shveller from "../../../../assets/Shveller.png";
-import Ugalok from "../../../../assets/Ugalok.png";
-import Truba from "../../../../assets/Truba.png";
-import Shveller2 from "../../../../assets/Shveller 2.png";
-import Armatura from "../../../../assets/Armatura.png";
-import KvadratProfil from "../../../../assets/Kvadrat profil.png";
-import KvadratPrut from "../../../../assets/Kvadrat prut.png";
-import Prut from "../../../../assets/Prut.png";
 import LoginIcon from "@mui/icons-material/Login";
+import { KatalogArray } from "../../../../KatalogArray";
+import { NavLink } from "react-router-dom";
 
-export default function Katalog() {
+export default function KatalogSection() {
   return (
     <Box sx={{ py: 7 }}>
       <div className="container">
@@ -31,48 +24,37 @@ export default function Katalog() {
           spacing={{ xs: 2, md: 5 }}
           columns={{ xs: 4, sm: 9, md: 10 }}
         >
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Dvuxtavr} text={"Dvuxtavr"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Shveller} text={"Shveller"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Ugalok} text={"Ugalok"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Truba} text={"Truba"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Shveller2} text={"Shveller"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Armatura} text={"Armatura"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={KvadratProfil} text={"Kvadrat profil"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={KvadratPrut} text={"Kvadrat prut"} />
-          </Grid>
-          <Grid item xs={2} sm={3} md={2}>
-            <KatalogCard image={Prut} text={"Prut"} />
-          </Grid>
+          {KatalogArray.map((item) => (
+            <Grid item xs={2} key={item.id} sm={3} md={2}>
+              <NavLink
+                to={`/katalog-item/${item.id}`}
+                className={"text-decoration-none"}
+              >
+                <KatalogCard
+                  bg={"#F4F7F8"}
+                  image={item.image}
+                  text={item.text}
+                />
+              </NavLink>
+            </Grid>
+          ))}
         </Grid>
         <Box sx={{ display: "flex", justifyContent: "center", mt: 7 }}>
-          <Button
-            variant="contained"
-            sx={{
-              background: "#323750",
-              p: "13px 30px",
-              "&:hover": {
-                backgroundColor: "#535561",
-              },
-            }}
-            endIcon={<LoginIcon />}
-          >
-            Katalogga o'tish
-          </Button>
+          <NavLink to="/katalog" className={"text-decoration-none"}>
+            <Button
+              variant="contained"
+              sx={{
+                background: "#323750",
+                p: "13px 30px",
+                "&:hover": {
+                  backgroundColor: "#535561",
+                },
+              }}
+              endIcon={<LoginIcon />}
+            >
+              Katalogga o'tish
+            </Button>
+          </NavLink>
         </Box>
       </div>
     </Box>

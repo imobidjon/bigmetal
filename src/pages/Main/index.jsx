@@ -1,12 +1,12 @@
 import React from 'react'
-import { About, Companies, Contact, Fifth, FirstSection, Katalog, TopMahsulotlar } from './Sections'
+import { About, Companies, Contact, Fifth, FirstSection, KatalogSection, TopMahsulotlar } from './Sections'
 
 export default function Main() {
   return (
     <div>
         <FirstSection />
         <TopMahsulotlar />
-        <Katalog />
+        <KatalogSection />
         <About />
         <Fifth />
         <Companies />

@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 export default function AppMenu() {
   return (
@@ -14,7 +15,7 @@ export default function AppMenu() {
       <div className="container">
         <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid p-0">
-            <a className="navbar-brand" href="/">
+            <NavLink to="/" className={"navbar-brand text-decoration-none"}>
               <img
                 src={Logo}
                 style={{
@@ -25,7 +26,7 @@ export default function AppMenu() {
                 }}
                 alt={"Logo"}
               />
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
               type="button"
@@ -45,13 +46,12 @@ export default function AppMenu() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a
-                    className="nav-link active text-white"
-                    aria-current="page"
-                    href="/"
+                  <NavLink
+                    to="/katalog"
+                    className={"nav-link text-decoration-none text-white"}
                   >
                     Katalog
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white" href="/">

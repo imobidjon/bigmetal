@@ -3,6 +3,7 @@ import React from "react";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import Logo from "../../assets/logo.png";
 import { YMaps, Map } from "@pbe/react-yandex-maps";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -20,9 +21,14 @@ export default function Footer() {
           <Grid item md={5}>
             <Box sx={{ display: "flex", color: "#fff" }}>
               <Box>
-                <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
-                  Katalog
-                </Typography>
+                <NavLink
+                  to="/katalog"
+                  className={" text-decoration-none text-white"}
+                >
+                  <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
+                    Katalog
+                  </Typography>
+                </NavLink>
                 <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
                   Kompaniya haqida
                 </Typography>
@@ -134,9 +140,9 @@ export default function Footer() {
             </YMaps>
           </Grid>
         </Grid>
-        <Divider sx={{border: '2px solid #fff', mt: 3, mb:1}} />
-        <Typography textAlign={'center'} paddingBottom={'20px'} color={'#fff'}>
-        Barcha huquqlar himoyalangan. “BIG METALL” 2023
+        <Divider sx={{ border: "2px solid #fff", mt: 3, mb: 1 }} />
+        <Typography textAlign={"center"} paddingBottom={"20px"} color={"#fff"}>
+          Barcha huquqlar himoyalangan. “BIG METALL” 2023
         </Typography>
       </div>
     </Box>
