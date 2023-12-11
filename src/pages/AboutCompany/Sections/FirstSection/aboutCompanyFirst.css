@@ -1,0 +1,71 @@
+.AboutBgImage {
+  background: url(../../../../assets/AboutCompanyBG.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0 10rem 0;
+  position: relative;
+}
+
+.AboutHeaderText {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 48px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 72px !important;
+}
+
+.AboutParagraphText {
+  margin-top: 50px !important;
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 29.5px !important; /* 184.375% */
+}
+
+.AboutFirstWrapper {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+}
+
+.AboutFirstWrapperPosition {
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+}
+
+.AboutFirstCard {
+  width: 200px;
+  height: 158px;
+  background: #323750;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.AboutFirstCardText {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.AboutFirstCardParagraph {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
