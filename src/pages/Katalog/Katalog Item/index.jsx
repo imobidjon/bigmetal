@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { KatalogArray } from "../../../KatalogArray";
 import "./KatalogItem.css";
-import { Person } from "@mui/icons-material";
 
 export default function KatalogItem() {
   const { id } = useParams();

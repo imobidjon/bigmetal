@@ -5,7 +5,7 @@ import HuaweiLogo from "../../../../assets/HuaweiLogo.png";
 
 export default function Companies() {
   return (
-    <div className="BgRectangleWrapper">
+    <div className="BgRectangleWrapper" style={{marginTop: '8rem'}} >
       <div className="BgRectangle"></div>
       <div className="container">
         <Grid container>

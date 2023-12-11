@@ -1,6 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { AppMenu, Footer } from "./layout";
-import { AboutCompany, Katalog, KatalogItem, Main } from "./pages";
+import {
+  AboutCompany,
+  Blogs,
+  Calculator,
+  Katalog,
+  KatalogItem,
+  Main,
+} from "./pages";
 
 function App() {
   return (
@@ -11,6 +18,8 @@ function App() {
         <Route Component={Katalog} path="/katalog" />
         <Route Component={KatalogItem} path="/katalog-item/:id" />
         <Route Component={AboutCompany} path="/about-us" />
+        <Route Component={Blogs} path="/blogs" />
+        <Route Component={Calculator} path="/calculator" />
       </Routes>
       <Footer />
     </div>

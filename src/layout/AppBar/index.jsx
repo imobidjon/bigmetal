@@ -62,14 +62,20 @@ export default function AppMenu() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
+                  <NavLink
+                    to="/blogs"
+                    className={"nav-link text-decoration-none text-white"}
+                  >
                     Bloglar
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
+                  <NavLink
+                    to="/calculator"
+                    className={"nav-link text-decoration-none text-white"}
+                  >
                     Kalkulyator
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white" href="/">

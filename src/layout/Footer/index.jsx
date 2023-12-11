@@ -29,17 +29,32 @@ export default function Footer() {
                     Katalog
                   </Typography>
                 </NavLink>
-                <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
-                  Kompaniya haqida
-                </Typography>
-                <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
-                  Blog
-                </Typography>
+                <NavLink
+                  to="/about-us"
+                  className={" text-decoration-none text-white"}
+                >
+                  <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
+                    Kompaniya haqida
+                  </Typography>
+                </NavLink>
+                <NavLink
+                  to="/blogs"
+                  className={" text-decoration-none text-white"}
+                >
+                  <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
+                    Blog
+                  </Typography>
+                </NavLink>
               </Box>
               <Box sx={{ ml: 10 }}>
-                <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
-                  Kalkulyator
-                </Typography>
+                <NavLink
+                  to="/calculator"
+                  className={" text-decoration-none text-white"}
+                >
+                  <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
+                    Kalkulyator
+                  </Typography>
+                </NavLink>
                 <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
                   Kontaktlar
                 </Typography>
