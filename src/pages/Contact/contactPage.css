@@ -1,0 +1,57 @@
+.ContactTitle {
+  color: #000 !important;
+  font-family: Libre Franklin !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.ContactParagraph {
+  color: #424242 !important;
+  font-family: Libre Franklin !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 166.044% !important; /* 26.567px */
+}
+
+.ContactCard {
+  background: #323750;
+  position: relative;
+  display: inline-flex;
+  padding: 38px 124px 112px 38px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ContactSmallCard {
+  width: 60px;
+  height: 60px;
+  background: #f4f7f8;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.ContactCardInfo {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.ContactCardMail,
+.ContactCardPhone,
+.ContactCardLocation,
+.ContactCardTime {
+  color: #fff !important;
+  font-family: Libre Franklin !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}

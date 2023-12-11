@@ -4,6 +4,7 @@ import {
   AboutCompany,
   Blogs,
   Calculator,
+  Contact,
   Katalog,
   KatalogItem,
   Main,
@@ -20,6 +21,7 @@ function App() {
         <Route Component={AboutCompany} path="/about-us" />
         <Route Component={Blogs} path="/blogs" />
         <Route Component={Calculator} path="/calculator" />
+        <Route Component={Contact} path="/contact" />
       </Routes>
       <Footer />
     </div>

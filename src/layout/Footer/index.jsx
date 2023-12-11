@@ -55,9 +55,14 @@ export default function Footer() {
                     Kalkulyator
                   </Typography>
                 </NavLink>
-                <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
-                  Kontaktlar
-                </Typography>
+                <NavLink
+                  to="/contact"
+                  className={" text-decoration-none text-white"}
+                >
+                  <Typography sx={{ my: 1, fontFamily: "Libre Franklin" }}>
+                    Kontaktlar
+                  </Typography>
+                </NavLink>
               </Box>
             </Box>
 

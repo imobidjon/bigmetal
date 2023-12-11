@@ -78,9 +78,12 @@ export default function AppMenu() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
+                  <NavLink
+                    to="/contact"
+                    className={"nav-link text-decoration-none text-white"}
+                  >
                     Kontaktlar
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <span className="navbar-text text-white d-flex align-items-center">

@@ -4,3 +4,4 @@ export {default as KatalogItem} from './Katalog/Katalog Item';
 export {default as AboutCompany} from './AboutCompany';
 export {default as Blogs} from './Blog';
 export {default as Calculator} from './Calculator';
+export {default as Contact} from './Contact';
